@@ -1900,8 +1900,8 @@
 //             </h4>
 //             <ul className="space-y-4 text-sm text-white/45">
 //               {[
-//                 { Icon: MapPin, v: "Business Bay, Dubai, UAE" },
-//                 { Icon: Phone, v: "+971 4 123 4567" },
+//                 { Icon: MapPin, v: "Ground Floor, Building No-21,Ganga Towers 1st Main Road, Ganaga Nagar, Kodambakkam, Chennai-600024" },
+//                 { Icon: Phone, v: "+91 98416 26539" },
 //                 { Icon: Mail, v: "info@valcargo.com" },
 //                 { Icon: Clock, v: "Mon–Fri 8:00–18:00 GST" },
 //               ].map(({ Icon, v }) => (
@@ -2174,7 +2174,7 @@ const WHY_ITEMS = [
 ];
 
 const TIMELINE = [
-  { year: "2023", title: "Founded", desc: "Established as a focused regional freight forwarder with a commitment to logistics precision and excellence." },
+  { year: "2023", title: "Founded", desc: "Founded by Mr. Valliappan Kasi vishwanathan, leveraging 12+ years of logistics expertise to deliver reliable and customer-focused freight forwarding solutions." },
   { year: "2024", title: "Digital Integration", desc: "Launched optimized route alignment structures delivering transparent visibility loops to clients." },
   { year: "2026", title: "Today & Beyond", desc: "Providing dynamic multimodal end-to-end transport coordination and strategic supply management lanes globally." },
 ];
@@ -2906,12 +2906,12 @@ function ContactSection() {
               </div>
 
               {[
-                { icon: Phone, label: "Phone", value: "+971 4 123 4567" },
+                { icon: Phone, label: "Phone", value: "+91 98416 26539" },
                 { icon: Mail, label: "Email", value: "info@valcargo.com" },
                 {
                   icon: MapPin,
                   label: "Head Office",
-                  value: "Business Bay, Dubai, UAE",
+                  value: "Ground Floor, Building No-21,Ganga Towers 1st Main Road, Ganaga Nagar, Kodambakkam, Chennai-600024",
                 },
                 { icon: Clock, label: "Hours", value: "Mon–Fri 8:00–18:00 GST" },
               ].map((c) => (
@@ -3163,14 +3163,10 @@ function AboutPage({ onNavigate }: { onNavigate: (p: string) => void }) {
                 <br />
                 PARTNERS SINCE 2023
               </SectionHeading>
-              <p className="text-gray-500 text-sm leading-relaxed mt-5 mb-4">
-                Valcargo was founded in 2023 with a singular mission:
-                make international freight forwarding reliable, transparent, and
-                accessible to businesses of all sizes. From our sea freight
-                consignments to total multimodal coordination paths, we have built
-                our reputation shipment by shipment.
+              <p className="text-gray-500 text-sm leading-relaxed text-justify mt-5 mb-4">
+                Valcargo was founded in 2023 by Mr. Valliappan Kasi vishwanathan, a logistics professional with over 12 years of experience in the freight forwarding and supply chain industry. With a vision to make international freight forwarding reliable, transparent, and accessible to businesses of all sizes, he established Valcargo to deliver dependable logistics solutions. From sea freight consignments to comprehensive multimodal transportation and end-to-end supply chain coordination, Valcargo has built its reputation one successful shipment at a time through commitment, efficiency, and customer-focused service.
               </p>
-              <p className="text-gray-500 text-sm leading-relaxed mb-8">
+              <p className="text-gray-500 text-sm leading-relaxed text-justify mb-8">
                 Today, we operate routes across key global target lanes, with
                 specialized configurations for ocean freight (FCL & LCL), air cargo,
                 customs clearance, and last-mile logistics management loops.
@@ -3627,7 +3623,7 @@ function Footer({ setActivePage }: { setActivePage: (p: string) => void }) {
             <ul className="space-y-4 text-sm text-white/45">
               {[
                 { Icon: MapPin, v: "Ground Floor, Building No-21,Ganga Towers 1st Main Road, Ganaga Nagar, Kodambakkam, Chennai-600024" },
-                { Icon: Phone, v: "+91 81869 09211" },
+                { Icon: Phone, v: "+91 98416 26539" },
                 { Icon: Mail, v: "info@valcargo.com" },
               ].map(({ Icon, v }) => (
                 <li key={v} className="flex items-start gap-3">
