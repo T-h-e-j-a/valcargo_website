@@ -2424,7 +2424,7 @@ function Navbar({
               className="flex items-center gap-3 group text-left focus:outline-none flex-shrink-0"
             >
               <img 
-                src="/logo.png" 
+                src="logo.png" 
                 alt="Valcargo Logo" 
                 className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
@@ -3536,7 +3536,7 @@ function Footer({ setActivePage }: { setActivePage: (p: string) => void }) {
           <div>
             <div className="flex items-center gap-3 mb-5">
               <img 
-                src="/logo.png" 
+                src="logo.png" 
                 alt="Valcargo Logo" 
                 className="h-8 w-auto object-contain"
               />
@@ -3626,8 +3626,8 @@ function Footer({ setActivePage }: { setActivePage: (p: string) => void }) {
             </h4>
             <ul className="space-y-4 text-sm text-white/45">
               {[
-                { Icon: MapPin, v: "Business Bay, Dubai, UAE" },
-                { Icon: Phone, v: "+971 4 123 4567" },
+                { Icon: MapPin, v: "Ground Floor, Building No-21,Ganga Towers 1st Main Road, Ganaga Nagar, Kodambakkam, Chennai-600024" },
+                { Icon: Phone, v: "+91 81869 09211" },
                 { Icon: Mail, v: "info@valcargo.com" },
               ].map(({ Icon, v }) => (
                 <li key={v} className="flex items-start gap-3">
@@ -3635,7 +3635,14 @@ function Footer({ setActivePage }: { setActivePage: (p: string) => void }) {
                     className="w-4 h-4 flex-shrink-0 mt-0.5"
                     style={{ color: BLUE }}
                   />
-                  <span>{v}</span>
+                  <span
+                    style={{
+                      textAlign: "justify",
+                      display: "block",
+                    }}
+                  >
+                    {v}
+                  </span>
                 </li>
               ))}
             </ul>
