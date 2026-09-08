@@ -2034,149 +2034,143 @@ const ORANGE = "#F39C12";
 
 const SERVICES_DATA = [
   {
-    id: "freight-forwarding",
+    id: "ocean-freight",
     icon: Ship,
-    title: "Freight Forwarding",
-    subtitle: "Import & Export",
+    title: "Ocean Freight",
+    subtitle: "FCL and LCL",
     accentColor: BLUE,
-    description:
-      "Our freight forwarding service manages every aspect of international cargo movement — from origin booking and documentation to customs clearance and final delivery.",
-    features: [
-      "Full import & export management",
-      "Multi-modal transport coordination",
-      "Customs documentation & clearance",
-      "Dangerous goods handling (IMDG/IATA)",
-      "Incoterms advisory",
-      "Trade compliance consulting",
-    ],
-    img: IMG.shipBluered,
-    cardDesc:
-      "Import and export cargo management with customs clearance, documentation, and door-to-port coordination.",
-  },
-  {
-    id: "fcl",
-    icon: Package,
-    title: "FCL Services",
-    subtitle: "Full Container Load",
-    accentColor: ORANGE,
-    description:
-      "Full Container Load shipping gives your cargo exclusive use of a container — maximizing security, minimizing transit time, and providing the most cost-effective solution for large volume shipments.",
-    features: [
-      "20ft, 40ft, 40ft HC container options",
-      "Reefer and open-top containers",
-      "Port-to-port and door-to-door",
-      "Slot bookings on major shipping lines",
-      "Container tracking and milestone alerts",
-      "Demurrage and detention management",
-    ],
-    img: IMG.cargoShipAerial,
-    cardDesc:
-      "Full Container Load solutions for large shipments with dedicated container space and competitive rates.",
-  },
-  {
-    id: "lcl",
-    icon: Layers,
-    title: "LCL Services",
-    subtitle: "Less than Container Load",
-    accentColor: BLUE,
-    description:
-      "LCL consolidation is ideal for smaller shipments that don't fill a full container. We consolidate your cargo with other shippers on the same trade lane.",
-    features: [
-      "Weekly consolidation sailings on major routes",
-      "CFS to CFS and door-to-door options",
-      "Cargo insurance for consolidated loads",
-      "Break-bulk cargo handling",
-      "Real-time booking and cut-off notifications",
-      "Minimum 100 kg / 0.5 CBM acceptance",
-    ],
+    description: "Our Ocean Freight service delivers cost-effective and reliable shipping for FCL and LCL shipments worldwide, ensuring secure transit and seamless port handling.",
+    features: ["20ft, 40ft, 40ft HC container options", "LCL consolidation sailings", "Port-to-port & door-to-door", "Customs documentation support", "Cargo insurance options", "Slot bookings on major lines"],
     img: IMG.containerPort,
-    cardDesc:
-      "Less than Container Load for smaller cargo — consolidated shipping that saves costs without compromising safety.",
+    cardDesc: "FCL and LCL solutions for import and export shipments.",
   },
   {
     id: "air-freight",
     icon: Plane,
     title: "Air Freight",
-    subtitle: "Express & Charter",
+    subtitle: "Fast & Efficient",
     accentColor: ORANGE,
-    description:
-      "When speed is the priority, our air freight service delivers. We have negotiated rate agreements with 40+ airlines worldwide, offering express and economy options.",
-    features: [
-      "Airport-to-airport and door-to-door",
-      "Express and standard options",
-      "Charter flights for urgent or oversized cargo",
-      "Perishables and pharmaceuticals handling",
-      "IATA compliance and dangerous goods",
-      "Airline partnerships across 150+ airports",
-    ],
+    description: "When speed is the priority, our Air Freight service delivers. We provide fast and efficient solutions for time-sensitive cargo across a global network.",
+    features: ["Express & economy routing", "Airport-to-airport & door-to-door", "Charter flights for urgent cargo", "Perishables & pharma handling", "IATA compliance", "Real-time tracking updates"],
     img: IMG.airFreight,
-    cardDesc:
-      "Express air cargo solutions for time-critical shipments with global airline partnerships.",
+    cardDesc: "Fast and efficient solutions for time-sensitive cargo.",
+  },
+  {
+    id: "freight-forwarding",
+    icon: Globe,
+    title: "Freight Forwarding",
+    subtitle: "Professional Coordination",
+    accentColor: BLUE,
+    description: "We provide comprehensive professional coordination of shipments from origin to destination, simplifying your global supply chain.",
+    features: ["Multi-modal transport coordination", "Route optimization", "Carrier selection & booking", "Global network of agents", "Project cargo logistics", "Incoterms advisory"],
+    img: IMG.shipBluered,
+    cardDesc: "Professional coordination of shipments from origin to destination.",
+  },
+  {
+    id: "customs-clearance",
+    icon: Shield,
+    title: "Customs Clearance",
+    subtitle: "Documentation Assistance",
+    accentColor: ORANGE,
+    description: "Navigate global trade regulations with ease. We provide expert assistance with documentation and customs clearance procedures.",
+    features: ["HS code classification", "Tariff & duty advice", "Pre-arrival customs filing", "Trade compliance consulting", "Sanctions screening", "Documentation review"],
+    img: IMG.teamMeeting,
+    cardDesc: "Assistance with documentation and customs clearance procedures.",
+  },
+  {
+    id: "transportation",
+    icon: Truck,
+    title: "Transportation",
+    subtitle: "Reliable Coordination",
+    accentColor: BLUE,
+    description: "Reliable inland coordination of container and cargo movement, connecting ports, airports, and final delivery points.",
+    features: ["Container haulage (FCL)", "LTL & FTL trucking", "Reefer transport", "Heavy & oversized transport", "GPS tracking", "Last-mile distribution"],
+    img: IMG.cargoShipAerial,
+    cardDesc: "Reliable coordination of container and cargo movement.",
+  },
+  {
+    id: "import-export-doc",
+    icon: Layers,
+    title: "Import & Export Documentation",
+    subtitle: "Accurate Handling",
+    accentColor: ORANGE,
+    description: "Avoid delays with our accurate handling of all essential shipping, regulatory, and commercial documents.",
+    features: ["Bill of Lading & Airway Bill", "Certificates of Origin", "Commercial Invoice preparation", "Packing List verification", "Letter of Credit processing", "Export licenses support"],
+    img: IMG.warehouse,
+    cardDesc: "Accurate handling of shipping and commercial documents.",
   },
   {
     id: "door-to-door",
-    icon: Truck,
-    title: "Door-to-Door",
-    subtitle: "Complete Logistics",
+    icon: Package,
+    title: "Door-to-Door Logistics",
+    subtitle: "End-to-End Coordination",
     accentColor: BLUE,
-    description:
-      "Our door-to-door service is the ultimate hands-off solution. We handle pickup from your supplier's door, transportation, customs, and final delivery — single point of contact throughout.",
-    features: [
-      "Origin pickup and export customs",
-      "Ocean or air main carriage",
-      "Destination customs clearance",
-      "Last-mile delivery and POD",
-      "Integrated tracking dashboard",
-      "Single invoice, single contact",
-    ],
-    img: IMG.warehouse,
-    cardDesc:
-      "Complete end-to-end logistics from origin pickup to final destination delivery with full tracking.",
+    description: "The ultimate hands-off solution: complete end-to-end shipment coordination from origin pickup to final destination delivery.",
+    features: ["Origin pickup & export customs", "Ocean or air main carriage", "Destination customs clearance", "Final delivery & POD", "Single point of contact", "Integrated tracking dashboard"],
+    img: IMG.warehouseForklift,
+    cardDesc: "End-to-end shipment coordination from origin to final destination.",
   },
   {
-    id: "customs",
-    icon: Globe,
-    title: "Customs Clearance",
-    subtitle: "Regulatory Compliance",
+    id: "shipment-tracking",
+    icon: TrendingUp,
+    title: "Shipment Tracking",
+    subtitle: "Regular Updates",
     accentColor: ORANGE,
-    description:
-      "Expert customs brokerage and regulatory compliance across all major trade corridors. Our licensed brokers navigate complex tariff classifications and duty optimization.",
-    features: [
-      "Licensed customs brokerage in 40+ countries",
-      "HS code classification and tariff advice",
-      "Duty drawback and deferment programs",
-      "AEO/C-TPAT compliance programs",
-      "Pre-arrival customs filing",
-      "Trade sanctions screening",
-    ],
-    img: IMG.teamMeeting,
-    cardDesc:
-      "Expert customs brokerage and regulatory compliance across all major trade corridors.",
+    description: "Stay informed at every stage with regular updates on vessel schedules, ETD, ETA, and real-time shipment status.",
+    features: ["24/7 web tracking platform", "Automated milestone alerts", "Vessel schedule visibility", "Predictive ETA analytics", "Mobile access", "Exception notifications"],
+    img: IMG.containerPort,
+    cardDesc: "Regular updates on vessel schedules, ETD, ETA, and shipment status.",
+  },
+  {
+    id: "warehousing-distribution",
+    icon: Anchor,
+    title: "Warehousing & Distribution",
+    subtitle: "Storage Solutions",
+    accentColor: BLUE,
+    description: "Flexible storage and distribution solutions designed to scale with your business and meet specific customer requirements.",
+    features: ["Short & long-term storage", "Inventory management", "Pick, pack & labeling", "Cross-docking", "Consolidation & deconsolidation", "Secure facilities"],
+    img: IMG.warehouse,
+    cardDesc: "Storage and distribution solutions based on customer requirements.",
   },
 ];
 
 const WHY_ITEMS = [
   {
     icon: Shield,
-    title: "Fully Insured Cargo",
-    desc: "All shipments covered with comprehensive cargo insurance for complete peace of mind.",
+    title: "Reliable & Responsible",
+    desc: "We take ownership of every shipment and its documentation.",
+  },
+  {
+    icon: Phone,
+    title: "Transparent Communication",
+    desc: "We keep customers informed at every stage.",
+  },
+  {
+    icon: Target,
+    title: "Professional Service",
+    desc: "We work with accuracy and attention to detail.",
+  },
+  {
+    icon: Users,
+    title: "Customer First",
+    desc: "Customer requirements and satisfaction are our priority.",
+  },
+  {
+    icon: Clock,
+    title: "Timely Coordination",
+    desc: "We focus on smooth and timely shipment movement.",
   },
   {
     icon: Award,
-    title: "ISO Certified",
-    desc: "ISO 9001:2015 certified operations with documented quality management processes.",
-  },
-  {
-    icon: Zap,
-    title: "Fast Customs Clearance",
-    desc: "Pre-vetted customs pathways with our licensed brokers that minimize port dwell time.",
+    title: "Long-Term Relationships",
+    desc: "We aim to build lasting partnerships, not just complete transactions.",
   },
 ];
 
 const TIMELINE = [
-  { year: "2023", title: "Founded", desc: "Founded by Mr. Valliappan Kasi vishwanathan, leveraging 12+ years of logistics expertise to deliver reliable and customer-focused freight forwarding solutions." },
-  { year: "2024", title: "Digital Integration", desc: "Launched optimized route alignment structures delivering transparent visibility loops to clients." },
-  { year: "2026", title: "Today & Beyond", desc: "Providing dynamic multimodal end-to-end transport coordination and strategic supply management lanes globally." },
+  { year: "Partner", title: "Our Agency Partnership", desc: "VAL Cargo Services has successfully operated in partnership with Ocean World Lines, building a strong foundation of trust, reliability, and professional logistics services for our customers. Through this partnership and our dedicated customer support, we aim to ensure smooth shipment handling, clear communication, and timely logistics coordination." },
+  { year: "Commit", title: "Our Commitment", desc: "Trust is earned through every shipment we handle. As a growing logistics service provider, VAL Cargo Services is committed to providing dependable service, clear communication, competitive solutions, and professional support." },
+  { year: "Promise", title: "Our Promise", desc: "Your Cargo. Your Business. Our Responsibility. We are committed to becoming a logistics partner you can depend on — today, tomorrow, and for every shipment ahead." },
 ];
 
 // ─── Reusable: FadeIn ─────────────────────────────────────────────────────────
@@ -2424,7 +2418,7 @@ function Navbar({
               className="flex items-center gap-3 group text-left focus:outline-none flex-shrink-0"
             >
               <img 
-                src="logo.png" 
+                src={import.meta.env.BASE_URL + 'logo.png'} 
                 alt="Valcargo Logo" 
                 className="h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
@@ -2617,8 +2611,7 @@ function HeroSection({ onNavigate }: { onNavigate: (p: string) => void }) {
             transition={{ duration: 0.7, delay: 0.65 }}
             className="text-white/65 text-lg leading-relaxed mb-10 max-w-xl"
           >
-            Valcargo delivers end-to-end freight forwarding, FCL, LCL, air
-            freight, and door-to-door logistics solutions across global routes.
+            At VAL Cargo Services, we provide reliable and professional logistics solutions designed to make the shipping process simple, smooth, and efficient. From freight forwarding and ocean freight to documentation, transportation, and delivery coordination, we support shipments at every stage.
           </motion.p>
 
           <div className="flex flex-wrap gap-4"
@@ -3157,20 +3150,11 @@ function AboutPage({ onNavigate }: { onNavigate: (p: string) => void }) {
               />
             </FadeIn>
             <FadeIn direction="right" delay={0.15}>
-              <SectionLabel>Who We Are</SectionLabel>
-              <SectionHeading>
-                TRUSTED FREIGHT
-                <br />
-                PARTNERS SINCE 2023
-              </SectionHeading>
-              <p className="text-gray-500 text-sm leading-relaxed text-justify mt-5 mb-4">
-                Valcargo was founded in 2023 by Mr. Valliappan Kasi vishwanathan, a logistics professional with over 12 years of experience in the freight forwarding and supply chain industry. With a vision to make international freight forwarding reliable, transparent, and accessible to businesses of all sizes, he established Valcargo to deliver dependable logistics solutions. From sea freight consignments to comprehensive multimodal transportation and end-to-end supply chain coordination, Valcargo has built its reputation one successful shipment at a time through commitment, efficiency, and customer-focused service.
-              </p>
-              <p className="text-gray-500 text-sm leading-relaxed text-justify mb-8">
-                Today, we operate routes across key global target lanes, with
-                specialized configurations for ocean freight (FCL & LCL), air cargo,
-                customs clearance, and last-mile logistics management loops.
-              </p>
+              <SectionLabel>About Us</SectionLabel>
+                <SectionHeading>
+                  VAL CARGO SERVICES
+                </SectionHeading>
+              <p className="text-gray-500 text-sm leading-relaxed text-justify mt-5 mb-8">VAL Cargo Services is a growing logistics service provider focused on delivering reliable, transparent, and professional logistics solutions. We believe logistics is more than moving cargo — it is about building trust, keeping promises, and taking responsibility for every shipment. Our goal is to build long-term relationships with customers by providing clear communication, efficient coordination, and dependable service.</p>
             </FadeIn>
           </div>
         </div>
@@ -3532,7 +3516,7 @@ function Footer({ setActivePage }: { setActivePage: (p: string) => void }) {
           <div>
             <div className="flex items-center gap-3 mb-5">
               <img 
-                src="logo.png" 
+                src={import.meta.env.BASE_URL + 'logo.png'} 
                 alt="Valcargo Logo" 
                 className="h-8 w-auto object-contain"
               />
