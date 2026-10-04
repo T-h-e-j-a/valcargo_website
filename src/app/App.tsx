@@ -29,7 +29,7 @@
 
 // // ─── Image URLs ──────────────────────────────────────────────────────────────
 // const IMG = {
-//   heroShip: "https://images.unsplash.com/photo-1699588999949-e25959a59550?w=1920&h=1080&fit=crop&auto=format",
+//   heroShip: "https://images.unsplash.com/photo-1586528116311-ad8ed7c80bc2?w=1920&h=1080&fit=crop&auto=format",
 //   containerPort: "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?w=1920&h=800&fit=crop&auto=format",
 //   cargoShipAerial: "https://images.unsplash.com/photo-1724597500306-a4cbb7d1324e?w=800&h=600&fit=crop&auto=format",
 //   warehouse: "https://images.unsplash.com/photo-1740914994657-f1cdffdc418e?w=800&h=600&fit=crop&auto=format",
@@ -138,7 +138,7 @@
 //       "Ocean or air main carriage",
 //       "Destination customs clearance",
 //       "Last-mile delivery and POD",
-//       "Integrated tracking dashboard",
+//       "Comprehensive visibility",
 //       "Single invoice, single contact",
 //     ],
 //     img: IMG.warehouse,
@@ -1064,7 +1064,7 @@
 
 //               {[
 //                 { icon: Phone, label: "Phone", value: "+971 4 123 4567" },
-//                 { icon: Mail, label: "Email", value: "info@valcargo.com" },
+//                 { icon: Mail, label: "Email", value: "Valliappan@valcargo.in, Sumaa@valcargo.in" },
 //                 {
 //                   icon: MapPin,
 //                   label: "Head Office",
@@ -1902,7 +1902,7 @@
 //               {[
 //                 { Icon: MapPin, v: "Ground Floor, Building No-21,Ganga Towers 1st Main Road, Ganaga Nagar, Kodambakkam, Chennai-600024" },
 //                 { Icon: Phone, v: "+91 98416 26539" },
-//                 { Icon: Mail, v: "info@valcargo.com" },
+//                 { Icon: Mail, v: "Valliappan@valcargo.in, Sumaa@valcargo.in" },
 //                 { Icon: Clock, v: "Mon–Fri 8:00–18:00 GST" },
 //               ].map(({ Icon, v }) => (
 //                 <li key={v} className="flex items-start gap-3">
@@ -2051,7 +2051,7 @@ const SERVICES_DATA = [
     subtitle: "Fast & Efficient",
     accentColor: ORANGE,
     description: "When speed is the priority, our Air Freight service delivers. We provide fast and efficient solutions for time-sensitive cargo across a global network.",
-    features: ["Express & economy routing", "Airport-to-airport & door-to-door", "Charter flights for urgent cargo", "Perishables & pharma handling", "IATA compliance", "Real-time tracking updates"],
+    features: ["Express & economy routing", "Airport-to-airport & door-to-door", "Charter flights for urgent cargo", "Perishables & pharma handling", "IATA compliance", "Priority handling"],
     img: IMG.airFreight,
     cardDesc: "Fast and efficient solutions for time-sensitive cargo.",
   },
@@ -2084,7 +2084,7 @@ const SERVICES_DATA = [
     subtitle: "Reliable Coordination",
     accentColor: BLUE,
     description: "Reliable inland coordination of container and cargo movement, connecting ports, airports, and final delivery points.",
-    features: ["Container haulage (FCL)", "LTL & FTL trucking", "Reefer transport", "Heavy & oversized transport", "GPS tracking", "Last-mile distribution"],
+    features: ["Container haulage (FCL)", "LTL & FTL trucking", "Reefer transport", "Heavy & oversized transport", "Secure transit", "Last-mile distribution"],
     img: IMG.cargoShipAerial,
     cardDesc: "Reliable coordination of container and cargo movement.",
   },
@@ -2109,28 +2109,6 @@ const SERVICES_DATA = [
     features: ["Origin pickup & export customs", "Ocean or air main carriage", "Destination customs clearance", "Final delivery & POD", "Single point of contact", "Integrated tracking dashboard"],
     img: IMG.warehouseForklift,
     cardDesc: "End-to-end shipment coordination from origin to final destination.",
-  },
-  {
-    id: "shipment-tracking",
-    icon: TrendingUp,
-    title: "Shipment Tracking",
-    subtitle: "Regular Updates",
-    accentColor: ORANGE,
-    description: "Stay informed at every stage with regular updates on vessel schedules, ETD, ETA, and real-time shipment status.",
-    features: ["24/7 web tracking platform", "Automated milestone alerts", "Vessel schedule visibility", "Predictive ETA analytics", "Mobile access", "Exception notifications"],
-    img: IMG.containerPort,
-    cardDesc: "Regular updates on vessel schedules, ETD, ETA, and shipment status.",
-  },
-  {
-    id: "warehousing-distribution",
-    icon: Anchor,
-    title: "Warehousing & Distribution",
-    subtitle: "Storage Solutions",
-    accentColor: BLUE,
-    description: "Flexible storage and distribution solutions designed to scale with your business and meet specific customer requirements.",
-    features: ["Short & long-term storage", "Inventory management", "Pick, pack & labeling", "Cross-docking", "Consolidation & deconsolidation", "Secure facilities"],
-    img: IMG.warehouse,
-    cardDesc: "Storage and distribution solutions based on customer requirements.",
   },
 ];
 
@@ -2617,21 +2595,6 @@ function HeroSection({ onNavigate }: { onNavigate: (p: string) => void }) {
           <div className="flex flex-wrap gap-4"
           >
             <button
-              onClick={() =>
-                document
-                  .getElementById("contact")
-                  .scrollIntoView({ behavior: "smooth" })
-              }
-              className="group flex items-center gap-3 text-white font-bold uppercase tracking-widest text-sm px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105"
-              style={{
-                backgroundColor: ORANGE,
-                boxShadow: `0 8px 32px ${ORANGE}40`,
-              }}
-            >
-              Get a Free Quote
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button
               onClick={() => onNavigate("services")}
               className="font-bold uppercase tracking-widest text-sm px-8 py-4 rounded-lg transition-all duration-300 text-white border-2 hover:bg-white/10"
               style={{ borderColor: "rgba(255,255,255,0.3)" }}
@@ -2900,7 +2863,7 @@ function ContactSection() {
 
               {[
                 { icon: Phone, label: "Phone", value: "+91 98416 26539" },
-                { icon: Mail, label: "Email", value: "info@valcargo.com" },
+                { icon: Mail, label: "Email", value: "Valliappan@valcargo.in, Sumaa@valcargo.in" },
                 {
                   icon: MapPin,
                   label: "Head Office",
@@ -3154,7 +3117,7 @@ function AboutPage({ onNavigate }: { onNavigate: (p: string) => void }) {
                 <SectionHeading>
                   VAL CARGO SERVICES
                 </SectionHeading>
-              <p className="text-gray-500 text-sm leading-relaxed text-justify mt-5 mb-8">VAL Cargo Services is a growing logistics service provider focused on delivering reliable, transparent, and professional logistics solutions. We believe logistics is more than moving cargo — it is about building trust, keeping promises, and taking responsibility for every shipment. Our goal is to build long-term relationships with customers by providing clear communication, efficient coordination, and dependable service.</p>
+              <p className="text-gray-500 text-sm leading-relaxed text-justify mt-5 mb-8">VAL Cargo Services is a growing logistics service provider focused on delivering reliable, transparent, and professional logistics solutions. Founded by Valliappan, who brings 13 years of experience in the shipment field, specializing in FCL and LCL cargo. We believe logistics is more than moving cargo — it is about building trust, keeping promises, and taking responsibility for every shipment. Our goal is to build long-term relationships with customers by providing clear communication, efficient coordination, and dependable service.</p>
             </FadeIn>
           </div>
         </div>
@@ -3608,7 +3571,7 @@ function Footer({ setActivePage }: { setActivePage: (p: string) => void }) {
               {[
                 { Icon: MapPin, v: "Ground Floor, Building No-21,Ganga Towers 1st Main Road, Ganaga Nagar, Kodambakkam, Chennai-600024" },
                 { Icon: Phone, v: "+91 98416 26539" },
-                { Icon: Mail, v: "info@valcargo.com" },
+                { Icon: Mail, v: "Valliappan@valcargo.in, Sumaa@valcargo.in" },
               ].map(({ Icon, v }) => (
                 <li key={v} className="flex items-start gap-3">
                   <Icon
