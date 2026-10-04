@@ -2017,7 +2017,7 @@ import {
 
 // ─── Image URLs ──────────────────────────────────────────────────────────────
 const IMG = {
-  heroShip: "https://images.unsplash.com/photo-1699588999949-e25959a59550?w=1920&h=1080&fit=crop&auto=format",
+  heroShip: "https://www.digitalcreed.in/wp-content/uploads/2019/04/Image-1.jpg",
   containerPort: "https://images.unsplash.com/photo-1494412519320-aa613dfb7738?w=1920&h=800&fit=crop&auto=format",
   cargoShipAerial: "https://images.unsplash.com/photo-1724597500306-a4cbb7d1324e?w=800&h=600&fit=crop&auto=format",
   warehouse: "https://images.unsplash.com/photo-1740914994657-f1cdffdc418e?w=800&h=600&fit=crop&auto=format",
@@ -2433,13 +2433,6 @@ function Navbar({
                   )}
                 </motion.button>
               ))}
-              <button
-                onClick={() => goTo("contact")}
-                className="text-white font-bold uppercase tracking-widest text-xs px-5 py-2.5 rounded-lg transition-all duration-200 hover:scale-105"
-                style={{ backgroundColor: ORANGE }}
-              >
-                Get Quote
-              </button>
             </div>
 
             <button
@@ -2784,21 +2777,6 @@ function CTASection({ onNavigate }: { onNavigate: (p: string) => void }) {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <button
-              onClick={() =>
-                document
-                  .getElementById("contact")
-                  .scrollIntoView({ behavior: "smooth" })
-              }
-              className="group flex items-center gap-3 text-white font-bold uppercase tracking-widest text-sm px-8 py-4 rounded-lg transition-all duration-300 hover:scale-105"
-              style={{
-                backgroundColor: ORANGE,
-                boxShadow: `0 8px 32px ${ORANGE}40`,
-              }}
-            >
-              Request a Quote
-              <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button
               onClick={() => onNavigate("services")}
               className="font-bold uppercase tracking-widest text-sm px-8 py-4 rounded-lg transition-all text-white border-2 hover:bg-white/10"
               style={{ borderColor: "rgba(255,255,255,0.35)" }}
@@ -2814,50 +2792,26 @@ function CTASection({ onNavigate }: { onNavigate: (p: string) => void }) {
 
 // ─── Contact Section ──────────────────────────────────────────────────────────
 function ContactSection() {
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    service: "",
-    message: "",
-  });
-  const [submitted, setSubmitted] = useState(false);
-  const [loading, setLoading] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-      setSubmitted(true);
-    }, 1200);
-  };
-
-  const inputClass =
-    "w-full border rounded-lg px-4 py-3 text-sm focus:outline-none transition-all text-gray-700 bg-white";
-
   return (
     <section id="contact" className="py-24 bg-gray-50">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <FadeIn className="text-center mb-14">
           <SectionLabel>Get In Touch</SectionLabel>
-          <SectionHeading>REQUEST A QUOTE</SectionHeading>
+          <SectionHeading>CONTACT US</SectionHeading>
         </FadeIn>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14">
+        <div className="grid grid-cols-1 gap-14 max-w-3xl mx-auto">
           <FadeIn direction="left">
             <div className="space-y-8">
-              <div>
+               <div>
                 <h3
                   className="font-display font-black text-2xl mb-3"
                   style={{ color: NAVY }}
                 >
-                  {"LET'S TALK LOGISTICS"}
+                  {"COMPANY DETAILS"}
                 </h3>
                 <p className="text-gray-500 leading-relaxed text-sm">
-                  Our freight experts are ready to design a shipping solution
-                  tailored to your business needs. Get a competitive quote
-                  within 24 hours.
+                  Please reach out to us for enquiries, shipment coordination, and logistics support.
                 </p>
               </div>
 
@@ -2901,141 +2855,7 @@ function ContactSection() {
             </div>
           </FadeIn>
 
-          <FadeIn direction="right" delay={0.15}>
-            {submitted ? (
-              <motion.div
-                initial={{ opacity: 0, scale: 0.9 }}
-                animate={{ opacity: 1, scale: 1 }}
-                className="bg-white rounded-2xl p-14 text-center shadow-sm border border-gray-100 flex flex-col items-center justify-center h-full"
-              >
-                <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-5">
-                  <Check className="w-8 h-8 text-green-600" />
-                </div>
-                <h3
-                  className="font-display font-black text-2xl mb-2"
-                  style={{ color: NAVY }}
-                >
-                  Quote Requested!
-                </h3>
-                <p className="text-gray-500 text-sm">
-                  {"We'll send your freight quote within 24 business hours."}
-                </p>
-              </motion.div>
-            ) : (
-              <form
-                onSubmit={handleSubmit}
-                className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 space-y-5"
-              >
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-1.5">
-                      Full Name
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      value={form.name}
-                      onChange={(e) =>
-                        setForm({ ...form, name: e.target.value })
-                      }
-                      className={inputClass}
-                      style={{ borderColor: "rgba(10,61,98,0.15)" }}
-                      placeholder="John Smith"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-1.5">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      required
-                      value={form.email}
-                      onChange={(e) =>
-                        setForm({ ...form, email: e.target.value })
-                      }
-                      className={inputClass}
-                      style={{ borderColor: "rgba(10,61,98,0.15)" }}
-                      placeholder="john@company.com"
-                    />
-                  </div>
-                </div>
-                <div className="grid grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-1.5">
-                      Phone
-                    </label>
-                    <input
-                      type="tel"
-                      value={form.phone}
-                      onChange={(e) =>
-                        setForm({ ...form, phone: e.target.value })
-                      }
-                      className={inputClass}
-                      style={{ borderColor: "rgba(10,61,98,0.15)" }}
-                      placeholder="+971 50 000 0000"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-1.5">
-                      Service
-                    </label>
-                    <select
-                      value={form.service}
-                      onChange={(e) =>
-                        setForm({ ...form, service: e.target.value })
-                      }
-                      className={inputClass}
-                      style={{ borderColor: "rgba(10,61,98,0.15)" }}
-                    >
-                      <option value="">Select service…</option>
-                      <option>Freight Forwarding</option>
-                      <option>FCL Services</option>
-                      <option>LCL Services</option>
-                      <option>Air Freight</option>
-                      <option>Door-to-Door</option>
-                      <option>Customs Clearance</option>
-                    </select>
-                  </div>
-                </div>
-                <div>
-                  <label className="block text-xs font-bold uppercase tracking-widest text-gray-400 mb-1.5">
-                    Message
-                  </label>
-                  <textarea
-                    rows={4}
-                    value={form.message}
-                    onChange={(e) =>
-                      setForm({ ...form, message: e.target.value })
-                    }
-                    className={`${inputClass} resize-none`}
-                    style={{ borderColor: "rgba(10,61,98,0.15)" }}
-                    placeholder="Describe your shipment needs, origin, destination, volume…"
-                  />
-                </div>
-                <motion.button
-                  type="submit"
-                  disabled={loading}
-                  whileHover={{ scale: loading ? 1 : 1.02 }}
-                  whileTap={{ scale: loading ? 1 : 0.98 }}
-                  className="w-full text-white font-bold uppercase tracking-widest text-sm py-4 rounded-lg flex items-center justify-center gap-3 transition-colors"
-                  style={{ backgroundColor: loading ? BLUE : NAVY }}
-                >
-                  {loading ? (
-                    <>
-                      <div className="w-4 h-4 border-2 border-white/30 border-t-white rounded-full animate-spin" />
-                      Sending…
-                    </>
-                  ) : (
-                    <>
-                      Send Quote Request
-                      <ArrowRight className="w-5 h-5" />
-                    </>
-                  )}
-                </motion.button>
-              </form>
-            )}
-          </FadeIn>
+
         </div>
       </div>
     </section>
@@ -3379,21 +3199,6 @@ function ServicesPage({ defaultServiceId }: { defaultServiceId: string }) {
                   </li>
                 ))}
               </ul>
-              <button
-                onClick={() =>
-                  document
-                    .getElementById("contact")
-                    ?.scrollIntoView({ behavior: "smooth" })
-                }
-                className="group inline-flex items-center gap-3 text-white font-bold uppercase tracking-widest text-sm px-7 py-3.5 rounded-lg transition-all hover:scale-105"
-                style={{
-                  backgroundColor: current.accentColor,
-                  boxShadow: `0 8px 24px ${current.accentColor}30`,
-                }}
-              >
-                Get a Quote
-                <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </button>
             </div>
 
             <div
