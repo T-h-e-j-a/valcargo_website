@@ -2816,7 +2816,7 @@ function ContactSection() {
               </div>
 
               {[
-                { icon: Phone, label: "Phone", value: "+91 98416 26539" },
+                { icon: Phone, label: "Phone", value: "+91 63698 34238" },
                 { icon: Mail, label: "Email", value: "Valliappan@valcargo.in, Sumaa@valcargo.in" },
                 {
                   icon: MapPin,
@@ -3375,7 +3375,7 @@ function Footer({ setActivePage }: { setActivePage: (p: string) => void }) {
             <ul className="space-y-4 text-sm text-white/45">
               {[
                 { Icon: MapPin, v: "Ground Floor, Building No-21,Ganga Towers 1st Main Road, Ganaga Nagar, Kodambakkam, Chennai-600024" },
-                { Icon: Phone, v: "+91 98416 26539" },
+                { Icon: Phone, v: "+91 63698 34238" },
                 { Icon: Mail, v: "Valliappan@valcargo.in, Sumaa@valcargo.in" },
               ].map(({ Icon, v }) => (
                 <li key={v} className="flex items-start gap-3">
@@ -3401,7 +3401,7 @@ function Footer({ setActivePage }: { setActivePage: (p: string) => void }) {
       <div className="border-t border-white/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-5 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-white/25 text-xs">
-            &copy; 2026 Valcargo International Freight LLC. All rights reserved.
+            &copy; 2026 Valcargo Services. All rights reserved.
           </p>
           <div className="flex gap-6">
             {["Privacy Policy", "Terms of Service", "Cookie Policy"].map(
