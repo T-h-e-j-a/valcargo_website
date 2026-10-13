@@ -52,10 +52,7 @@ function figmaAssetResolver() {
 }
 
 export default defineConfig({
-  // Replace with your GitHub repository name
-  // Example: https://github.com/sree/my-portfolio
-  // base: '/my-portfolio/'
-  base: '/valcargo_website/',
+  base: '/',
 
   plugins: [
     figmaAssetResolver(),
